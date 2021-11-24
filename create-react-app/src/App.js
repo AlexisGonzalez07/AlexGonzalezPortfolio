@@ -1,15 +1,6 @@
-import './App.css';
-import Nav from './components/nav';
-import ProjectCards from './components/projectCards';
-import projects from './projects.json'
+import React from "react";
+import PortfolioContainer from "./components/PortfolioContainer.js";
 
-function App() {
-  return (
-    <div className="row">
-      <Nav />
-      <ProjectCards projects={projects}/>
-    </div>
-  );
-}
+const App = () => <PortfolioContainer />;
 
 export default App;

@@ -6,8 +6,19 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
+:root {
+  --dullyellow: #BFB417;
+  --yellow: #D9CC1E;
+  --brightyellow: #F2E529;
+  --gray: #BFBBBA;
+  --black: #0D0D0D;
+  --border-width: 5px;
+  --textstyle: underline;
+}
+
 body {
-  background-color: whitesmoke;
+  background-color: var(--black);
+  margin: 0;
 }
 
 h1 {
@@ -20,5 +31,10 @@ h3 {
   margin: auto;
   color: rgb(66, 171, 231);
   font-size: 20px;
+}
+
+.card {
+  background-color: var(--gray);
+  color: var(--brightyellow)
 }
 
