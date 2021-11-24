@@ -1,5 +1,5 @@
 import React from 'react';
-// import projects from '../projects';
+
 
 export default function ProjectCards({projects}) {
     console.log(projects)

@@ -2,21 +2,16 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className="row">
+      <div className="col-sm-12 col-lg-4">
+      <img class="card-img-top" src='./assets/images/CompanyNight.jpeg' alt="Card image cap"></img>
+      </div>
+      <div className="col-sm-12 col-lg-4">
+      <h1>About Me</h1>
       <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
+      Welcome to my Github portfolio page. I'm Alex, and I'm an upcoming web developer expected to graduate from the Coding Bootcamp at the University of Texas at Austin. When I'm not sharpening my coding skills, I'm most likely analyzing market moves, catching a game, or spending time with my loved ones. By December of 2021, I'll be a full-stack web developer capable of developing and deploying interactive user experiences, and given enough time, meet real-world needs with my applications.
       </p>
+      </div>
     </div>
   );
 }
