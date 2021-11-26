@@ -1,17 +1,28 @@
-import React from 'react';
+import React from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 export default function Contact() {
   return (
-    <div className="row">
-      <div className="col-sm-12 col-lg-4">
-      <img class="card-img-top" src='./assets/images/CompanyNight.jpeg' alt="Card image cap"></img>
-      </div>
-      <div className="col-sm-12 col-lg-4">
-      <h1>About Me</h1>
-      <p>
-      Welcome to my Github portfolio page. I'm Alex, and I'm an upcoming web developer expected to graduate from the Coding Bootcamp at the University of Texas at Austin. When I'm not sharpening my coding skills, I'm most likely analyzing market moves, catching a game, or spending time with my loved ones. By December of 2021, I'll be a full-stack web developer capable of developing and deploying interactive user experiences, and given enough time, meet real-world needs with my applications.
-      </p>
-      </div>
-    </div>
+    <Form>
+      <Form.Group className="mb-3" controlId="formName">
+        <Form.Label>Name</Form.Label>
+        <Form.Control type="text" placeholder="Name" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Text className="text-muted">
+          We'll never share your email with anyone else.
+        </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Are you a recruiter?" />
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
   );
 }

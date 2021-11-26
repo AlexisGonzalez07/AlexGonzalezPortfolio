@@ -1,20 +1,22 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 
 export default function ProjectCards({projects}) {
-    console.log(projects)
     return(
-        <div className="row justify-content-center">
-            {
-                projects.map((project,i) => (
-                    <div className="card text-center col-5">
-                    <div className="card-body" key={i}>
-                    <img class="card-img-top" src={project.project.src} alt="Card image cap"></img>
-                    <h5 className="card-title">{`${project.project.title}`}</h5>
-                    <p className="card-text">{`${project.project.description}`}</p>
-                </div>
-        </div>
-                ))}
-        </div>
-        )
-}
+<div className="row justify-content-center">
+{projects.map((project,i)=> (
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={project.project.src} />
+      <Card.Body key={i}>
+        <Card.Title> {`${project.project.title}`}</Card.Title>
+        <Card.Text>
+          {`${project.project.description}`}
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+))}
+ </div>
+)}
