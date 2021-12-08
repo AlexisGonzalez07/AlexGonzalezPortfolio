@@ -48,3 +48,7 @@ p {
 .aboutmetext {
   color: var(--black)
 }
+a {
+  margin: 10px;
+  padding: 25px;
+}

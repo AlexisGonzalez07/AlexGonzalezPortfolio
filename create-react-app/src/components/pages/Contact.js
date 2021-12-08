@@ -1,9 +1,23 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Box from "@mui/material/Box";
 
 export default function Contact() {
   return (
+    <div style={{ backgroundColor: "#EBDBAE" }}>
+    <div className="garden-container">
+      <br></br>
+      <div style={{ width: "100%" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            p: 2,
+            m: 1,
+          }}
+        >
     <Form>
       <Form.Group className="mb-3" controlId="formName">
         <Form.Label>Name</Form.Label>
@@ -24,5 +38,9 @@ export default function Contact() {
         Submit
       </Button>
     </Form>
+    </Box>
+        </div>
+      </div>
+    </div>
   );
 }
