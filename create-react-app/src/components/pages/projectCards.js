@@ -1,13 +1,7 @@
 import {
-  Progress,
   Button,
   Icon,
-  Table,
-  Segment,
   Grid,
-  Label,
-  Header,
-  Image,
   List,
 } from "semantic-ui-react";
 import Card from "@mui/material/Card";

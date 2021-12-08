@@ -6,6 +6,7 @@ import ProjectCards from './pages/projectCards';
 import Contact from './pages/Contact';
 import projects from '../projects.json';
 import 'semantic-ui-css/semantic.min.css';
+import Footer from './Footer'
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -32,6 +33,7 @@ export default function PortfolioContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
+      <Footer/>
     </div>
   );
 }
