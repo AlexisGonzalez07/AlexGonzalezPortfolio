@@ -33,11 +33,18 @@ h3 {
 }
 
 p {
-  color: var(--brightyellow)
+  color: var(--black)
 }
 
 .card {
   background-color: var(--gray);
-  color: var(--brightyellow)
+  color: var(--black)
 }
 
+.aboutmeheader {
+  color: var(--black)
+}
+
+.aboutmetext {
+  color: var(--black)
+}
